@@ -1,59 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fizza Appreciation System</title>
+<title>To Fizza</title>
 
-    <style>
-        body{
-            text-align:center;
-            font-family:Arial;
-            margin-top:100px;
-        }
+<style>
+body{
+    background-color:#faf7ff;
+    font-family:Georgia, serif;
+    text-align:center;
+    padding:60px;
+    color:#444;
+}
 
-        button{
-            padding:15px 30px;
-            font-size:20px;
-            cursor:pointer;
-        }
+.container{
+    max-width:800px;
+    margin:auto;
+}
 
-        #result{
-            margin-top:30px;
-            font-size:24px;
-            font-weight:bold;
-        }
-    </style>
+h1{
+    font-size:55px;
+}
+
+p{
+    font-size:24px;
+    line-height:1.9;
+}
+
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#result{
+    margin-top:25px;
+    font-size:28px;
+    font-weight:bold;
+}
+</style>
+
 </head>
+
 <body>
 
-<h1>💖 Fizza Appreciation System 💖</h1>
+<div class="container">
 
-<p>Press the button to analyze Fizza.</p>
+<h1>🌙 Fizza 🌙</h1>
 
-<button onclick="analyzeFizza()">
-    Analyze Fizza
+<p>
+People come and go,
+but some people quietly become a part of your soul.
+</p>
+
+<p>
+You are not just my best friend.
+You are the person behind countless smiles,
+inside jokes,
+late-night conversations,
+and some of my favorite memories.
+</p>
+
+<p>
+If I had to describe you in one sentence,
+I would say:
+"Home isn't always a place; sometimes it's a person."
+</p>
+
+<p>
+And for me,
+that person is you. 🤍
+</p>
+
+<button onclick="message()">
+✨ One More Thing
 </button>
 
 <div id="result"></div>
 
+</div>
+
 <script>
 
-function analyzeFizza(){
+function message(){
 
-    const results = [
-        "👑 Result: Fizza is a queen.",
-        "💖 Analysis Complete: My love, my everything.",
-        "🌟 Warning: Too much awesomeness detected.",
-        "😂 Fizza has a 100% chance of making life better.",
-        "🤖 AI Conclusion: Bestie level = Legendary.",
-        "💀 Error 404: Fizza's flaws not found.",
-        "☀️ Status: Human sunshine detected.",
-        "🚀 Certified best friend material.",
-        "✨ Conclusion: Life would be boring without Fizza.",
-        "🫡 Final Report: Protect Fizza at all costs."
-    ];
+const messages = [
 
-    document.getElementById("result").innerHTML =
-        results[Math.floor(Math.random() * results.length)];
+"💖 Thank you for being my safe place.",
+
+"🌷 Life became better after you entered it.",
+
+"✨ Some friendships are temporary. Ours feels timeless.",
+
+"🤍 You are one of my greatest blessings.",
+
+"🌙 No matter what happens, you'll always matter to me.",
+
+"💌 My favorite human. Always."
+
+];
+
+document.getElementById("result").innerHTML =
+messages[Math.floor(Math.random() * messages.length)];
+
 }
 
 </script>
